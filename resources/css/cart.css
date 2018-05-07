@@ -1,0 +1,140 @@
+#main {
+}
+
+#main .button {
+  box-sizing: border-box;
+  padding: 0.875rem 5rem;
+  border-radius: 54px;
+  margin-left: 1rem;
+}
+
+#main input {
+  width: 3rem;
+  padding-left: 1rem;
+  border: 1px solid hsla(0, 0%, 95%, 1);
+  background: hsla(0, 0%, 95%, 1);
+}
+
+#main input:focus{
+  border-color: var(--primary-color-hover);
+}
+
+
+.product-list-section {
+  padding: 2rem 10% 3.75rem 10%;
+}
+
+.shopping-cart {
+  display: grid;
+  grid-template-rows:5rem repeat(3, 1fr) repeat(2, 5rem) 2rem;
+  border: 1px solid var(--box-line-color);
+  padding: 1rem 2.5rem 2rem 2.5rem;
+  background-color: hsla(0, 100%, 100%, 1);
+  margin-bottom: 3rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column: 1/5;
+  padding: 1.5rem 0rem 1.5rem 0rem;
+}
+
+.shopping-cart:first-child{
+  color:red;
+}
+
+.span2{
+  grid-area:1 / 1 / 2 / 3;
+}
+
+.col1{
+  grid-column-start: 1;
+}
+
+.col2{
+  grid-column-start: 2;
+}
+
+.col3{
+  grid-column-start: 3;
+}
+
+.col4{
+  grid-column-start: 4;
+}
+
+.row:nth-child(1n+2){
+  border-bottom: 1px solid hsla(0, 0%, 90%, 1);
+}
+
+.text-right{
+  text-align: right;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.row:last-child{
+  padding-top:3rem;
+  border-bottom:none;
+}
+
+.header h5 {
+  font-family: "barlow", sans-serif;
+  font-size:1rem;
+  font-weight: 300;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding:1rem;
+}
+
+
+.shopping-cart img {
+  margin-left: 2rem;
+  height:100px;
+}
+
+.description h3{
+  padding: 0rem;
+  text-align: left;
+  color:var(--product-text-color);
+}
+
+.total h3{
+  text-align: right;
+}
+
+.col3 h3{
+  text-align:right;
+}
+
+.price h4{
+  text-align:right;
+  margin-right:2rem;
+  color:var(--product-text-color);
+}
+
+
+*/
+
+@media only screen and (max-width: 1020px) {
+  .landing .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media only screen and (max-width: 760px) {
+  .landing .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media only screen and (max-width: 470px) {
+  .landing .product-list {
+    grid-template-columns: 1fr;
+  }
+}

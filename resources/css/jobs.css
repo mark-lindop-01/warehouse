@@ -1,0 +1,92 @@
+#main {
+  text-align: left;
+  justify-items: auto;
+}
+
+.jobs {
+  padding: 2rem 10% 4rem 10%;
+  /*padding: 3.75rem 11.75rem 7.5625rem 11.75rem; */
+}
+
+form {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: flex-end;
+  width:100%;
+  max-width:640px;
+  margin-bottom: 3rem;
+}
+
+#main form .button {
+  padding: 1.14rem 0rem;
+  width: 100%;
+}
+
+#job-search {
+  background-color:hsla(0, 0%, 100%, 1);
+  border: 1px solid var(--box-line-color);
+  padding: 30px;
+  border-radius:2px;
+}
+
+#job-search input {
+  border-radius: 3px;
+  background-color: hsla(0, 0%, 95%, 1);
+  border: solid 1px hsla(0, 0%, 90%, 1);
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+#job-search input:focus{
+  border-color: var(--primary-color-hover);
+}
+
+.job-list {
+  display:grid;
+  grid-template-columns: 70% 30%;
+  width:100%;
+  max-width:640px;
+  padding-top: 1rem;
+}
+
+.role h3 {
+  font-size:1.4rem;
+  color: var(--primary-color);
+}
+
+.role h3:hover {
+  color: var(--primary-color-hover);
+}
+
+
+.location h3 {
+  font-size:1.2rem;
+  padding-top:0.2rem;
+  font-weight:300;
+  text-align: right;
+}
+
+.location h3:hover {
+  color: var(--primary-color-hover);
+}
+
+
+.location{
+  margin-top: 1rem;
+  padding-bottom:1rem;
+  border-bottom: 1px solid var(--line-color);
+  margin-bottom: 1rem;
+}
+
+.role {
+  margin-top: 1rem;
+  padding-bottom:1rem;
+  border-bottom: 1px solid var(--line-color);
+  margin-bottom: 1rem;
+}
+
+#see-all-jobs {
+  justify-self: center;
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
